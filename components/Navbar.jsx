@@ -123,50 +123,50 @@ const Navbar = () => {
 						</div>
 					</div>
 					<div className="py-4 flex flex-col ">
-						<div className="flex justify-center items-center">
-							<ul className="uppercase ">
-								<Link href="/">
-									<li
-										onClick={() => setNav(false)}
-										className="py-4 font-bold text-sm"
-									>
-										Home
-									</li>
-								</Link>
-								<Link href="/#about">
-									<li
-										onClick={() => setNav(false)}
-										className="py-4 font-bold text-sm"
-									>
-										About
-									</li>
-								</Link>
-								<Link href="/#skills">
-									<li
-										onClick={() => setNav(false)}
-										className="py-4 font-bold text-sm"
-									>
-										Skills
-									</li>
-								</Link>
-								<Link href="/#projects">
-									<li
-										onClick={() => setNav(false)}
-										className="py-4 font-bold text-sm"
-									>
-										Projects
-									</li>
-								</Link>
-								<Link href="/#contact">
-									<li
-										onClick={() => setNav(false)}
-										className="py-4 font-bold text-sm"
-									>
-										Contact
-									</li>
-								</Link>
-							</ul>
-						</div>
+						{/* <div className="flex justify-center items-center"> */}
+						<ul className="uppercase ">
+							<Link href="/">
+								<li
+									onClick={() => setNav(false)}
+									className="py-4 font-bold text-sm"
+								>
+									Home
+								</li>
+							</Link>
+							<Link href="/#about">
+								<li
+									onClick={() => setNav(false)}
+									className="py-4 font-bold text-sm"
+								>
+									About
+								</li>
+							</Link>
+							<Link href="/#skills">
+								<li
+									onClick={() => setNav(false)}
+									className="py-4 font-bold text-sm"
+								>
+									Skills
+								</li>
+							</Link>
+							<Link href="/#projects">
+								<li
+									onClick={() => setNav(false)}
+									className="py-4 font-bold text-sm"
+								>
+									Projects
+								</li>
+							</Link>
+							<Link href="/#contact">
+								<li
+									onClick={() => setNav(false)}
+									className="py-4 font-bold text-sm"
+								>
+									Contact
+								</li>
+							</Link>
+						</ul>
+						{/* </div> */}
 						<div className="pt-40">
 							<p className="uppercase font-bold tracking-widest text-[#5651e5]">
 								Let's Connect
