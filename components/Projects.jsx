@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import todoImg from '../public/assets/projects/todo_app.jpg';
-import cryptoImg from '../public/assets/projects/crypto.jpg';
-import netflixImg from '../public/assets/projects/netflix.jpg';
+import weatherImg from '../public/assets/projects/weather.jpg';
+import squidImg from '../public/assets/projects/squid.jpg';
 import twitchImg from '../public/assets/projects/twitch.jpg';
 import ProjectItem from './ProjectItem';
 
@@ -23,14 +23,14 @@ const Projects = () => {
 						projectUrl="/todo"
 					/>
 					<ProjectItem
-						title="Crypto App"
-						backgroundImg={cryptoImg}
-						projectUrl="/crypto"
+						title="Weather App"
+						backgroundImg={weatherImg}
+						projectUrl="/weather"
 					/>
 					<ProjectItem
-						title="Netflix App"
-						backgroundImg={netflixImg}
-						projectUrl="/netflix"
+						title="Squid Game App"
+						backgroundImg={squidImg}
+						projectUrl="/squidGame"
 					/>
 					<ProjectItem
 						title="Twitch App"
