@@ -105,7 +105,7 @@ const Navbar = () => {
 					<div>
 						<div className="flex w-full items-center justify-between">
 							<Link href="/">
-								<Image src={logoImg} width="150" height="150" alt="/" />
+								<Image src={logoImg} width="177" height="177" alt="/" />
 							</Link>
 							<div
 								onClick={handleNav}
@@ -114,40 +114,57 @@ const Navbar = () => {
 								<AiOutlineClose />
 							</div>
 						</div>
-						<div className="border-b border-gray-300 my-4">
+						<div className="border-b flex justify-center items-center border-gray-300 my-1">
 							<p>Vision | Create | Execute </p>
 						</div>
 					</div>
-					<div className="py-4 flex flex-col">
-						<ul className="uppercase ">
-							<Link href="/">
-								<li onClick={() => setNav(false)} className="py-4 text-sm">
-									Home
-								</li>
-							</Link>
-							<Link href="/#about">
-								<li onClick={() => setNav(false)} className="py-4 text-sm">
-									About
-								</li>
-							</Link>
-							<Link href="/#skills">
-								<li onClick={() => setNav(false)} className="py-4 text-sm">
-									Skills
-								</li>
-							</Link>
-							<Link href="/#projects">
-								<li onClick={() => setNav(false)} className="py-4 text-sm">
-									Project
-								</li>
-							</Link>
-							<Link href="/#contact">
-								<li onClick={() => setNav(false)} className="py-4 text-sm">
-									Contact
-								</li>
-							</Link>
-						</ul>
+					<div className="py-4 flex flex-col ">
+						<div className="flex justify-center items-center">
+							<ul className="uppercase ">
+								<Link href="/">
+									<li
+										onClick={() => setNav(false)}
+										className="py-4 font-bold text-sm"
+									>
+										Home
+									</li>
+								</Link>
+								<Link href="/#about">
+									<li
+										onClick={() => setNav(false)}
+										className="py-4 font-bold text-sm"
+									>
+										About
+									</li>
+								</Link>
+								<Link href="/#skills">
+									<li
+										onClick={() => setNav(false)}
+										className="py-4 font-bold text-sm"
+									>
+										Skills
+									</li>
+								</Link>
+								<Link href="/#projects">
+									<li
+										onClick={() => setNav(false)}
+										className="py-4 font-bold text-sm"
+									>
+										Projects
+									</li>
+								</Link>
+								<Link href="/#contact">
+									<li
+										onClick={() => setNav(false)}
+										className="py-4 font-bold text-sm"
+									>
+										Contact
+									</li>
+								</Link>
+							</ul>
+						</div>
 						<div className="pt-40">
-							<p className="uppercase tracking-widest text-[#5651e5]">
+							<p className="uppercase font-bold tracking-widest text-[#5651e5]">
 								Let's Connect
 							</p>
 							<div className="flex items-center justify-between my-4 w-full sm:w-[80%]  ">
