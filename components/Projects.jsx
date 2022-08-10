@@ -5,8 +5,9 @@ import React from 'react';
 import todoImg from '../public/assets/projects/todo_app.jpg';
 import weatherImg from '../public/assets/projects/weather.jpg';
 import squidImg from '../public/assets/projects/squid.jpg';
-import twitchImg from '../public/assets/projects/twitch.jpg';
+
 import ProjectItem from './ProjectItem';
+import covidImg from '../public/assets/projects/covid.jpg';
 
 const Projects = () => {
 	return (
@@ -33,9 +34,9 @@ const Projects = () => {
 						projectUrl="/squidGame"
 					/>
 					<ProjectItem
-						title="Twitch App"
-						backgroundImg={twitchImg}
-						projectUrl="/twitch"
+						title="Covid Tracker App"
+						backgroundImg={covidImg}
+						projectUrl="/covid"
 					/>
 				</div>
 			</div>

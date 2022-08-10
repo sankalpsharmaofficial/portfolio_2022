@@ -49,7 +49,7 @@ const Contact = () => {
 								</p>
 							</div>
 							<div>
-								<p className="uppercase pt-8">Connect With Me</p>
+								<p className="uppercase font-bold pt-8">Connect With Me</p>
 								<div className="flex items-center justify-between py-4">
 									<a
 										href="https://www.linkedin.com/in/sankalp-sharma156/"

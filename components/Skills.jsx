@@ -23,7 +23,7 @@ const Skills = () => {
 							<div className="m-auto ">
 								<Image src={htmlImg} width="64px" height="64px" alt="/" />
 							</div>
-							<div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col font-bold justify-center items-center">
 								HTML
 							</div>
 						</div>
@@ -34,7 +34,7 @@ const Skills = () => {
 							<div className="m-auto ">
 								<Image src={cssImg} width="64px" height="64px" alt="/" />
 							</div>
-							<div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col font-bold justify-center items-center">
 								CSS
 							</div>
 						</div>
@@ -45,7 +45,7 @@ const Skills = () => {
 							<div className="m-auto ">
 								<Image src={javascriptImg} width="64px" height="64px" alt="/" />
 							</div>
-							<div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col font-bold justify-center items-center">
 								Javascript
 							</div>
 						</div>
@@ -56,7 +56,7 @@ const Skills = () => {
 							<div className="m-auto ">
 								<Image src={reactImg} width="64px" height="64px" alt="/" />
 							</div>
-							<div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col font-bold justify-center items-center">
 								React
 							</div>
 						</div>
@@ -67,7 +67,7 @@ const Skills = () => {
 							<div className="m-auto ">
 								<Image src={tailwindImg} width="64px" height="64px" alt="/" />
 							</div>
-							<div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col font-bold justify-center items-center">
 								Tailwind
 							</div>
 						</div>
@@ -78,7 +78,7 @@ const Skills = () => {
 							<div className="m-auto ">
 								<Image src={firebaseImg} width="64px" height="64px" alt="/" />
 							</div>
-							<div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col font-bold justify-center items-center">
 								Firebase
 							</div>
 						</div>
@@ -89,7 +89,7 @@ const Skills = () => {
 							<div className="m-auto ">
 								<Image src={githubImg} width="64px" height="64px" alt="/" />
 							</div>
-							<div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col font-bold justify-center items-center">
 								Github
 							</div>
 						</div>
@@ -100,7 +100,7 @@ const Skills = () => {
 							<div className="m-auto ">
 								<Image src={nextJSImg} width="64px" height="64px" alt="/" />
 							</div>
-							<div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col font-bold justify-center items-center">
 								NextJs
 							</div>
 						</div>
