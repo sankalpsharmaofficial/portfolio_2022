@@ -5,6 +5,7 @@ import React from 'react';
 import todoImg from '../public/assets/projects/todo_app.jpg';
 import weatherImg from '../public/assets/projects/weather.jpg';
 import squidImg from '../public/assets/projects/squid.jpg';
+import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 import ProjectItem from './ProjectItem';
 import covidImg from '../public/assets/projects/covid.jpg';
@@ -16,7 +17,17 @@ const Projects = () => {
 				<p className="uppercase text-xl tracking-widest font-bold text-[#009394]">
 					Projects
 				</p>
-				<h2 className="py-4">What I've Built</h2>
+				<h2 className="py-4">
+					<RoughNotation
+						type="highlight"
+						color="#ffd54f"
+						show="true"
+						animationDelay="800"
+						animationDuration="1000"
+					>
+						What I've Built
+					</RoughNotation>
+				</h2>
 				<div className="grid md:grid-cols-2 gap-8">
 					<ProjectItem
 						title="Todo App"

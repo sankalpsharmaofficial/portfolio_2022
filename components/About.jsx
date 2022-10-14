@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import meImg from '../public/assets/me/my_pic.jpg';
+import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 const About = () => {
 	return (
@@ -11,17 +12,47 @@ const About = () => {
 					<p className="uppercase font-bold text-xl tracking-widest text-[#009394]">
 						About
 					</p>
-					<h2 className="py-4 ">Who I am </h2>
-					<p className="py-2 text-gray-600">
-						A passionate Frontend Developer, Photographer! 👨🏻‍💻📸
-					</p>
+					<RoughNotationGroup show="true">
+						<h2 className="py-4 ">
+							<RoughNotation
+								type="highlight"
+								color="#ffd54f"
+								animationDelay="800"
+								animationDuration="1000"
+							>
+								Who I am
+							</RoughNotation>
+						</h2>
+						<p className="py-2 text-gray-600">
+							<RoughNotation
+								type="underline"
+								color="#29C5F6"
+								strokeWidth="2"
+								animationDelay="800"
+								animationDuration="1000"
+							>
+								A passionate Frontend Developer, Photographer! 👨🏻‍💻📸
+							</RoughNotation>
+						</p>
+					</RoughNotationGroup>
+
 					<p className="py-2 text-gray-600">
 						👀 I’m interested in Frontend technologies 🌱 I’m currently learning
 						Web3 and trying to work on a project that implements it. 💬 Ask me
 						about web development
 					</p>
-					<p className="py-2 text-gray-600 underline cursor-pointer">
-						<Link href="/#projects">Check out my latest projects</Link>
+					<p className="py-2 text-gray-600 cursor-pointer">
+						<Link href="/#projects">
+							<RoughNotation
+								type="highlight"
+								color="#FDA172"
+								show="true"
+								animationDelay="2000"
+								animationDuration="1000"
+							>
+								Check out my latest projects
+							</RoughNotation>
+						</Link>
 					</p>
 				</div>
 				<div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">

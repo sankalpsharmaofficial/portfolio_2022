@@ -8,6 +8,7 @@ import tailwindImg from '../public/assets/skills/tailwind.jpg';
 import firebaseImg from '../public/assets/skills/firebase.jpg';
 import githubImg from '../public/assets/skills/github1.jpg';
 import nextJSImg from '../public/assets/skills/nextjs.jpg';
+import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 const Skills = () => {
 	return (
@@ -16,7 +17,17 @@ const Skills = () => {
 				<p className="text-xl tracking-widest uppercase font-bold text-[#009394] ">
 					Skills
 				</p>
-				<h2 className="py-4">What I Can Do</h2>
+				<h2 className="py-4">
+					<RoughNotation
+						type="highlight"
+						color="#ffd54f"
+						show="true"
+						animationDelay="800"
+						animationDuration="1000"
+					>
+						What I Can Do
+					</RoughNotation>
+				</h2>
 				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 					<div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
 						<div className="grid grid-cols-2 gap-4 justify-center items-center">

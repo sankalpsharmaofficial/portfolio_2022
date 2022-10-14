@@ -6,6 +6,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/contact.jpg';
+import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 const Contact = () => {
 	const [name, setName] = useState('');
@@ -28,7 +29,17 @@ const Contact = () => {
 				<p className="text-xl tracking-widest uppercase font-bold text-[#009394]">
 					Contact
 				</p>
-				<h2 className="py-4">Get In Touch</h2>
+				<h2 className="py-4">
+					<RoughNotation
+						type="highlight"
+						color="#ffd54f"
+						show="true"
+						animationDelay="800"
+						animationDuration="1000"
+					>
+						Get In Touch
+					</RoughNotation>
+				</h2>
 				<div className="grid lg:grid-cols-5 gap-8">
 					{/* left */}
 					<div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
@@ -41,15 +52,48 @@ const Contact = () => {
 								/>
 							</div>
 							<div>
-								<h2 className="py-2">Sankalp Sharma</h2>
-								<p>Front-End Developer</p>
-								<p className="py-4">
-									I am available for freelance or full-time positions. Contact
-									me and let&apos;s talk.
-								</p>
+								<RoughNotationGroup show="true">
+									<h2 className="py-2">
+										<RoughNotation
+											type="highlight"
+											color="#ffd54f"
+											animationDelay="800"
+											animationDuration="1000"
+										>
+											Sankalp Sharma
+										</RoughNotation>
+									</h2>
+									<p>
+										<RoughNotation
+											type="underline"
+											color="#29C5F6"
+											strokeWidth="3"
+											animationDelay="800"
+											animationDuration="1000"
+										>
+											Front-End Developer
+										</RoughNotation>
+									</p>
+									<p className="py-4">
+										I am available for freelance or full-time positions. Contact
+										me and let&apos;s talk.
+									</p>
+								</RoughNotationGroup>
 							</div>
 							<div>
-								<p className="uppercase font-bold pt-8">Connect With Me</p>
+								<p className="uppercase font-bold pt-8">
+									<RoughNotation
+										type="circle"
+										color="#b71c1c"
+										show="true"
+										strokeWidth="2"
+										animationDelay="800"
+										animationDuration="1000"
+									>
+										Connect With Me
+									</RoughNotation>
+								</p>
+
 								<div className="flex items-center justify-between py-4">
 									<a
 										href="https://www.linkedin.com/in/sankalp-sharma156/"
