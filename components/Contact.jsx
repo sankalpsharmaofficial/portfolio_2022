@@ -87,6 +87,7 @@ const Contact = () => {
 										color="#b71c1c"
 										show="true"
 										strokeWidth="2"
+										padding="[5,5,10,10]"
 										animationDelay="800"
 										animationDuration="1000"
 									>

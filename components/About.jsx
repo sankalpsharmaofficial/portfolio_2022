@@ -3,12 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import meImg from '../public/assets/me/my_pic.jpg';
 import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
+import { useInView } from 'react-intersection-observer';
+import { useEffect, useState } from 'react';
 
 const About = () => {
+	const { ref, inView } = useInView();
+	// const [rerender, setRerender] = useState(false);
+	// useEffect(() => {
+	// 	setRerender(!rerender);
+	// }, [inView, rerender]);
+
 	return (
 		<div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
 			<div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 ">
-				<div className="col-span-2 ">
+				<div ref={ref} className="col-span-2 ">
 					<p className="uppercase font-bold text-xl tracking-widest text-[#009394]">
 						About
 					</p>
@@ -47,7 +55,7 @@ const About = () => {
 								type="highlight"
 								color="#FDA172"
 								show="true"
-								animationDelay="2000"
+								animationDelay="1000"
 								animationDuration="1000"
 							>
 								Check out my latest projects
