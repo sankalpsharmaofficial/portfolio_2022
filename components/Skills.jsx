@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
-import htmlImg from '../public/assets/skills/html.jpg';
-import cssImg from '../public/assets/skills/css.jpg';
+import htmlImg from '../public/assets/skills/html.png';
+import cssImg from '../public/assets/skills/css.png';
 import javascriptImg from '../public/assets/skills/javascript.jpg';
-import reactImg from '../public/assets/skills/react.jpg';
-import tailwindImg from '../public/assets/skills/tailwind.jpg';
-import firebaseImg from '../public/assets/skills/firebase.jpg';
-import githubImg from '../public/assets/skills/github1.jpg';
-import nextJSImg from '../public/assets/skills/nextjs.jpg';
+import reactImg from '../public/assets/skills/react.png';
+import tailwindImg from '../public/assets/skills/tailwind.png';
+import firebaseImg from '../public/assets/skills/firebase.png';
+import githubImg from '../public/assets/skills/github.png';
+import nextJSImg from '../public/assets/skills/nextjs.png';
 import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 const Skills = () => {
