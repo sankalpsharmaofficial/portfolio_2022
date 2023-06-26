@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import adviceGenImg from '../public/assets/projects/adviceGen.jpeg';
+import expenseTrackerImg from '../public/assets/projects/expenseTracker.jpeg';
 import todoImg from '../public/assets/projects/todo_app.jpg';
 import weatherImg from '../public/assets/projects/weather.jpg';
 import squidImg from '../public/assets/projects/squid.jpg';
@@ -48,6 +50,16 @@ const Projects = () => {
 						title="Covid Tracker App"
 						backgroundImg={covidImg}
 						projectUrl="/covid"
+					/>
+					<ProjectItem
+						title="Expense Tracker App"
+						backgroundImg={expenseTrackerImg}
+						projectUrl="/expenseTracker"
+					/>
+					<ProjectItem
+						title="Advice Generator"
+						backgroundImg={adviceGenImg}
+						projectUrl="/adviceGenerator"
 					/>
 				</div>
 			</div>
