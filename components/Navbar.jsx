@@ -6,22 +6,24 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
-import logoImg from '../public/assets/big_logo/favi.png';
+import logoImg from '../public/assets/big_logo/fav.png';
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const [shadow, setShadow] = useState(false);
-	const [navBg, setNavBg] = useState('#ecf0f3 ');
+	const [navBg, setNavBg] = useState('#ecf0f3');
 	const [linkColor, setLinkColor] = useState('#1f2937');
 
 	const router = useRouter();
 
 	useEffect(() => {
 		if (
-			router.asPath === '/property' ||
-			router.asPath === '/crypto' ||
-			router.asPath === '/netflix' ||
-			router.asPath === '/twitch'
+			router.asPath === '/todo' ||
+			router.asPath === '/weather' ||
+			router.asPath === '/squidGame' ||
+			router.asPath === '/covid' ||
+			router.asPath === '/adviceGenerator' ||
+			router.asPath === '/expenseTracker'
 		) {
 			setNavBg('transparent');
 			setLinkColor('#ecf0f3 ');
@@ -60,8 +62,8 @@ const Navbar = () => {
 					<Image
 						src={logoImg}
 						alt="portfolio logo"
-						width="115"
-						height="116"
+						width="150"
+						height="145"
 						className=" contrast-150"
 					/>
 				</Link>
@@ -116,7 +118,7 @@ const Navbar = () => {
 					<div>
 						<div className="flex w-full items-center justify-between">
 							<Link href="/">
-								<Image src={logoImg} width="117" height="117" alt="/" />
+								<Image src={logoImg} width="137" height="137" alt="/" />
 							</Link>
 							<div
 								onClick={handleNav}
